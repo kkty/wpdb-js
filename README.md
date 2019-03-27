@@ -2,6 +2,8 @@ This package is for retrieving posts/categories/tags from wordpress database.
 
 ## Usage
 
+### Installation
+
 ```console
 $ npm i wordpress-js mysql2
 ```
@@ -22,7 +24,7 @@ const db = require('wordpress-js')({
 });
 ```
 
-#### Methods
+### Methods
 
 #### listCategories
 
@@ -92,8 +94,6 @@ db.listPosts()
   });
 ```
 
-##### options
-
 ```js
 // sort posts (ascending order)
 db.listPosts({ sortBy: 'id' })
@@ -118,7 +118,7 @@ db.listPosts({ limit: 100, offset: 100 })
 ```js
 db.findCategory({ id: 1 })
   .then(category => {
-    // category is like
+    // `category` is like
     // {
     //   id: 1,
     //   slug: 'category1',
@@ -137,7 +137,7 @@ db.findCategory({ id: 1 })
 ```js
 db.findTag({ id: 10 })
   .then(tag => {
-    // tag is like
+    // `tag` is like
     // {
     //   id: 10,
     //   slug: 'tag1',
@@ -151,7 +151,7 @@ db.findTag({ id: 10 })
 ```js
 db.findPost({ id: 100 })
   .then(post => {
-    // post is like
+    // `post` is like
     // {
     //   id: 100,
     //   excerpt: 'excerpt1',
