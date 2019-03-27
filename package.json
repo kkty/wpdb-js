@@ -12,7 +12,7 @@
     "prepare": "npm run build",
     "test": "mocha --recursive --require ts-node/register \"test/**/*.ts\""
   },
-  "author": "",
+  "author": "Kazushi Kitaya <kazushikitaya@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.1.7",
