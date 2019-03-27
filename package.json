@@ -1,0 +1,34 @@
+{
+  "name": "wordpress-js",
+  "version": "1.0.0",
+  "description": "retrieve posts/categories/tags data from wordpress database",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint './src/**/*.ts' './test/**/*.ts'",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "mocha --recursive --require ts-node/register \"test/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "source-map-support": "^0.5.11",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "knex": "^0.16.3",
+    "php-unserialize": "0.0.1"
+  }
+}

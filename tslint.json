@@ -1,0 +1,12 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-airbnb"],
+  "rules": {
+    "no-shadowed-variable": false,
+    "array-type": [true, "array"],
+    "interface-name": false,
+    "object-literal-sort-keys": false,
+    "arrow-parens": false,
+    "max-line-length": false,
+    "type-literal-delimiter": true
+  }
+}
