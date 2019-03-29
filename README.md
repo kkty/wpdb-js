@@ -1,11 +1,15 @@
-This package is for retrieving posts/categories/tags from wordpress database.
+## About
+
+This package is for retrieving posts/categories/tags directly from wordpress database.
+
+Written in TypeScript and type declarations are provided.
 
 ## Usage
 
 ### Installation
 
 ```console
-$ npm i wordpress-js mysql2
+$ npm i wpdb-js mysql2
 ```
 
 ### Initialization
@@ -13,7 +17,7 @@ $ npm i wordpress-js mysql2
 [knex.js](https://knexjs.org/) is used internally. knex-style config should be passed at initialization.
 
 ```js
-const db = require('wordpress-js')({
+const db = require('wpdb-js')({
   client: "mysql2",
   connection: {
     host: "...",
