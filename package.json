@@ -2,7 +2,6 @@
   "name": "wordpress-js",
   "version": "1.0.0",
   "description": "retrieve posts/categories/tags data from wordpress database",
-  "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
