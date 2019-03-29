@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-js",
+  "name": "wpdb-js",
   "version": "1.0.0",
   "description": "retrieve posts/categories/tags data from wordpress database",
   "main": "dist/index.js",
